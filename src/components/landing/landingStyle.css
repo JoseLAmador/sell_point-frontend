@@ -1,0 +1,139 @@
+.header {
+    height: 85vh;
+    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7)), url(../../imgs/inicio.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    .header {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+        height: 95vh; } }
+@media only screen and (max-width: 600px) {
+    .header {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
+
+/*TITULOS*/
+
+.heading-primary {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.heading-primary--main {
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: .5rem;
+    display: flex;
+    flex-direction: column;
+}
+@media only screen and (max-width: 600px) {
+    .heading-primary--main {
+        letter-spacing: .3rem;
+        font-size: 3rem; } }
+.heading-primary--sub {
+    font-size: 1.6rem;
+    font-weight: 900;
+    letter-spacing: 1rem;
+    color: #ffc000;
+    }
+@media only screen and (max-width: 600px) {
+    .heading-primary--sub {
+        letter-spacing: .5rem; } }
+
+
+.ant-btn:active, .ant-btn.active {
+    color: red !important;
+    background-color: #fff;
+    border-color: yellow !important;
+}
+
+.ant-btn:hover, .ant-btn:focus {
+    color: darkblue !important;
+    background-color: #fff;
+    border-color: deeppink !important;
+}
+
+/*SECTION 1*/
+
+.section-one {
+    background-color: #f7f7f7;
+    padding: 10rem 0;
+    margin-top: -25vh; }
+@media only screen and (max-width: 900px) {
+    .section-one {
+        padding: 13rem 0; } }
+
+.first-section-one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5rem;
+    background-color: #f7f7f7;
+}
+
+@media only screen and (max-width: 700px) {
+    .first-section-one {
+        flex-direction: column;
+        padding: 0 2rem;
+    }
+}
+
+/*SECTION 2*/
+
+.section-features {
+    padding: 20rem 0;
+    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7)), url(../../imgs/inicio.jpg);
+    background-size: cover;
+    margin-top: -2rem;
+    transform: skewY(-7deg); }
+.section-features > * {
+    transform: skewY(7deg); }
+@media only screen and (max-width: 900px) {
+    .section-features {
+        padding: 15rem 0; } }
+
+.first-section-two{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 5rem;
+    flex-wrap: wrap;
+}
+
+.cardSectionTwo {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    border-radius: 5px;
+    background: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cardSectionTwo:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+.imgStyle{
+    border-radius: 5px 5px 0 0;
+    width: 50%;
+    margin: 10px;
+}
+
+
