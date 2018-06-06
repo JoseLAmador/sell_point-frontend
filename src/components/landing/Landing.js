@@ -2,6 +2,9 @@ import React, {Component} from 'react';
 import Inicio from "./Inicio";
 import SectionOne from "./SectionOne";
 import SectionTwo from "./SectionTwo";
+import Pie from "./Pie";
+import SectionThree from "./SectionThree";
+import SectionFour from "./SectionFour";
 
 class Landing extends Component{
     render(){
@@ -11,8 +14,10 @@ class Landing extends Component{
                 <main>
                     <SectionOne/>
                     <SectionTwo/>
-
+                    <SectionThree/>
+                    <SectionFour/>
                 </main>
+                <Pie/>
             </div>
 
         );

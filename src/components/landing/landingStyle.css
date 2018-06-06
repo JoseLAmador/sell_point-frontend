@@ -63,7 +63,7 @@
 
 .section-one {
     background-color: #f7f7f7;
-    padding: 10rem 0;
+    padding: 15rem 0;
     margin-top: -25vh; }
 @media only screen and (max-width: 900px) {
     .section-one {
@@ -136,4 +136,122 @@
     margin: 10px;
 }
 
+
+/*SECTION3*/
+
+.section-three {
+    background-color: #f7f7f7;
+    padding: 20rem 0 8rem 0;
+    margin-top: -10rem; }
+@media only screen and (max-width: 900px) {
+    .section-three {
+        padding: 20rem 0 8rem 0; } }
+
+
+.itemCheck{
+    display:flex;
+    align-items:center;
+    margin:10px;
+}
+
+.itemIcon{
+    font-size:35px;
+    color:green;
+}
+
+.itemSpan{
+    margin-left:15px;
+    text-align: initial;
+}
+
+.itemContainer{
+    display:flex;
+    flex-direction:column;
+}
+
+.ant-carousel .slick-slide h3 {
+    color: #fff;
+}
+
+.first-section-three{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 5rem;
+    flex-wrap: wrap;
+    margin-top: 35px;
+}
+
+/*SECTION FOUR*/
+
+.section-four {
+    background-color: pink;
+    padding: 8rem 0;
+}
+@media only screen and (max-width: 900px) {
+    .section-four {
+        padding: 4rem; }
+}
+
+.ant-carousel .slick-slide {
+    text-align: center;
+    height: 300px;
+    line-height: 300px;
+    background-color: black;
+    overflow: hidden;
+}
+
+
+
+.imageCarousel1 {
+    height: 300px;
+    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7)), url(../../imgs/apples-bananas-breads-709838.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageCarousel2 {
+    height: 300px;
+    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7)), url(../../imgs/assorted-business-buy-159991.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageCarousel3 {
+    height: 300px;
+    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7)), url(../../imgs/business-commerce-daylight-916446.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleWhite{
+    color:white;
+}
+
+
+
+
+/*FOOTER*/
+
+.footer {
+    background-color: black;
+    padding: 4rem 0;
+    font-size: 1.4rem;
+    color: #f7f7f7; }
+@media only screen and (max-width: 900px) {
+    .footer {
+        padding: 4rem 0; }
+}
 
