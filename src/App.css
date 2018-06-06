@@ -1,3 +1,5 @@
+@import "./components/login/loginStyle.css";
+
 .App {
   text-align: center;
 }
@@ -26,3 +28,37 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+/*MENU START*/
+.navbarStyle{
+  display: flex;
+  padding: 0 1%;
+  justify-content: space-between;
+  align-items: center;
+  color: #000;
+  text-decoration: none;
+}
+
+.trigger{
+  font-size: 18px;
+  line-height: 64px;
+  cursor: pointer;
+  transition: color .3s;
+}
+.trigger:hover {
+  color: #1890ff;
+}
+
+.logo{
+  color: white;
+  height: 32px;
+  background: rgba(255,255,255,.2);
+  margin: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*MENU END*/
+
+
