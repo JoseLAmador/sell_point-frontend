@@ -1,4 +1,5 @@
 @import "./components/login/loginStyle.css";
+@import "./components/tienda/tableStyle.css";
 
 .App {
   text-align: center;
@@ -60,5 +61,4 @@
 }
 
 /*MENU END*/
-
 
