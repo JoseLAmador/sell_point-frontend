@@ -1,14 +1,15 @@
 import React, {Component, Fragment} from 'react';
-import {Table, BackTop} from 'antd';
+import {BackTop} from 'antd';
+import TableGeneric from "../generic/TableGeneric";
 
 const dataSource = [{
-    key: '1',
+    id: '1',
     name: 'Mike',
     monto: 32,
     fecha: '10 septiembre 2018',
     factura:'0019229j3'
 }, {
-    key: '2',
+    id: '2',
     name: 'John',
     monto: 42,
     fecha: '10 junio 2018',
@@ -39,19 +40,15 @@ class Compras extends Component{
     render(){
         return(
             <Fragment>
-                <h2>Compras Page</h2>
 
-                <BackTop visibilityHeight={100} />
-
-
-                <Table
+                <TableGeneric
                     dataSource={dataSource}
                     columns={columns}
-                    rowKey={record => record.key}
-                    scroll={{x:650}}
-                    style={{marginBottom:10}}
+                    title={"Compras Page"}
 
                 />
+
+                <BackTop visibilityHeight={100} />
 
 
             </Fragment>

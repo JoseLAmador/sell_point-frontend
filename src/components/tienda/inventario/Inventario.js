@@ -1,35 +1,36 @@
 import React, {Component, Fragment} from 'react';
-import {Table, BackTop} from 'antd';
+import {BackTop} from 'antd';
+import TableGeneric from "../generic/TableGeneric";
 
 const dataSource = [{
-    key: '1',
-    name: 'Mike',
+    id: '1',
+    producto: 'Sabritas',
     monto: 32,
     fecha: '10 septiembre 2018',
     factura:'0019229j3'
 }, {
-    key: '2',
-    name: 'John',
+    id: '2',
+    producto: 'Coca-Cola',
     monto: 42,
     fecha: '10 junio 2018',
     factura:'0019229j3'
 }];
 
 const columns = [{
-    title: 'Name',
-    dataIndex: 'name',
-    key: 'name',
+    title: 'Producto',
+    dataIndex: 'producto',
+    key: 'producto',
 }, {
     title: 'Monto',
     dataIndex: 'monto',
     key: 'monto',
     render:(monto)=><span>$ {monto}</span>
 }, {
-    title: 'Fecha',
+    title: 'Registro',
     dataIndex: 'fecha',
     key: 'fecha',
 },{
-    title: 'Factura',
+    title: 'Ticket',
     dataIndex: 'factura',
     key: 'factura',
 }
@@ -39,19 +40,14 @@ class Inventario extends Component{
     render(){
         return(
             <Fragment>
-                <h2>Inventario Page</h2>
 
-                <BackTop visibilityHeight={100} />
-
-
-                <Table
+                <TableGeneric
                     dataSource={dataSource}
                     columns={columns}
-                    rowKey={record => record.key}
-                    scroll={{x:650}}
-                    style={{marginBottom:10}}
-
+                    title={"Inventario Page"}
                 />
+
+                <BackTop visibilityHeight={100} />
 
 
             </Fragment>

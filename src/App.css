@@ -51,13 +51,17 @@
 }
 
 .logo{
-  color: white;
   height: 32px;
-  background: rgba(255,255,255,.2);
-  margin: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: #f28326;
+  margin: 0;
+  padding: 32px;
+}
+
+.trigger:hover {
+  color: white;
 }
 
 /*MENU END*/

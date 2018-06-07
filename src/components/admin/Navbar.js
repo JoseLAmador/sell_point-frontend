@@ -11,11 +11,12 @@ const Navbar = ({toggle, collapsed})=>{
                     className={"trigger"}
                     type={collapsed?'menu-unfold':'menu-fold'}
                     onClick={toggle}
+                    style={{color:'white', fontWeight:'bold'}}
                 />
             </span>
 
             <span>
-                <Menu mode={"horizontal"}>
+                <Menu mode={"horizontal"} style={{borderRadius: '10px'}}>
                     <SubMenu key={'sub1'} title={<span>Hello, Shop</span>}>
                         <Menu.Item>
                             <span>

@@ -7,14 +7,17 @@ const SubMenu = Menu.SubMenu;
 const LeftSide = ({onOpenChange, openKeys})=>{
     return(
         <Menu
-            theme={"dark"}
             mode={"inline"}
             openKeys={openKeys}
             defaultSelectedKeys={[]}
             defaultOpenKeys={[]}
             onOpenChange={onOpenChange}
+
         >
-            <SubMenu  key="sub1" title={<div><Icon type="shopping-cart" /><span>Tiendita 1</span></div>} >
+            <SubMenu  key="sub1" title={<div>
+                <Icon type="shopping-cart" style={{fontSize:15, fontWeight:'bold'}}/>
+                <span style={{fontWeight:'bold', }}>Tiendita 1</span></div>}
+            >
                 <Menu.Item key="1" disabled={false}>
                     <Link to={'/shop/gastos'} >Gastos</Link>
                 </Menu.Item>
@@ -48,7 +51,8 @@ const LeftSide = ({onOpenChange, openKeys})=>{
                 </Menu.Item>
             </SubMenu>
 
-                <SubMenu  key="sub2" title={<div><Icon type="shopping-cart" /><span>Tiendita 2</span></div>}>
+                <SubMenu  key="sub2" title={<div><Icon type="shopping-cart" style={{fontSize:15, fontWeight:'bold'}}/>
+                    <span style={{fontWeight:'bold', }}>Tiendita 2</span></div>}>
                     <Menu.Item key="9" disabled={false}>
                         <Link to={'/login'} >subMenu 1</Link>
                     </Menu.Item>

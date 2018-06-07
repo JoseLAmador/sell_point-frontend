@@ -1,58 +1,61 @@
 import React, {Component, Fragment} from 'react';
-import {Table, BackTop} from 'antd';
+import {BackTop} from 'antd';
+import TableGeneric from "../generic/TableGeneric";
 
 const dataSource = [{
-    key: '1',
-    name: 'Mike',
-    monto: 32,
+    id: '1',
+    proveedor: 'Mike',
     fecha: '10 septiembre 2018',
-    factura:'0019229j3'
+    factura:'0019229j3',
+    monto:'345'
 }, {
-    key: '2',
-    name: 'John',
-    monto: 42,
+    id: '2',
+    proveedor: 'John',
     fecha: '10 junio 2018',
-    factura:'0019229j3'
+    factura:'0019229j4',
+    monto:'995'
 }];
 
-const columns = [{
-    title: 'Name',
-    dataIndex: 'name',
-    key: 'name',
-}, {
-    title: 'Monto',
-    dataIndex: 'monto',
-    key: 'monto',
-    render:(monto)=><span>$ {monto}</span>
-}, {
-    title: 'Fecha',
-    dataIndex: 'fecha',
-    key: 'fecha',
-},{
-    title: 'Factura',
-    dataIndex: 'factura',
-    key: 'factura',
-}
+const columns = [
+    {
+        title:'Proveedor',
+        dataIndex:'proveedor',
+        key:'proveedor'
+    },
+    {
+        title: 'No. Factura',
+        dataIndex: 'factura',
+        key:"factura"
+
+    },
+    {
+        title: 'Fecha',
+        dataIndex: 'fecha',
+        key:"fecha"
+
+    },
+    {
+        title:'Monto',
+        dataIndex: 'monto',
+        key: 'monto',
+        render: (monto)=><span>$ {monto}</span>
+    }
 ];
+
 
 class Ventas extends Component{
     render(){
         return(
             <Fragment>
-                <h2>Ventas Page</h2>
 
-                <BackTop visibilityHeight={100} />
-
-
-                <Table
+                <TableGeneric
                     dataSource={dataSource}
                     columns={columns}
-                    rowKey={record => record.key}
-                    scroll={{x:650}}
-                    style={{marginBottom:10}}
+                    title={"Ventas Page"}
 
                 />
 
+                <BackTop visibilityHeight={100} />
 
             </Fragment>
         );

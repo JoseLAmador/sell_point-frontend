@@ -179,10 +179,6 @@
     flex-direction:column;
 }
 
-.ant-carousel .slick-slide h3 {
-    color: #fff;
-}
-
 .first-section-three{
     display: flex;
     justify-content: space-around;

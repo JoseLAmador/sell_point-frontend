@@ -1,58 +1,59 @@
 import React, {Component, Fragment} from 'react';
-import {Table, BackTop} from 'antd';
+import TableGeneric from "../generic/TableGeneric";
+import {BackTop} from 'antd';
 
 const dataSource = [{
-    key: '1',
-    name: 'Mike',
-    monto: 32,
-    fecha: '10 septiembre 2018',
-    factura:'0019229j3'
+    id: '1',
+    client: 'Mike',
+    address: "Pachuca, Hgo #506",
+    email: 'mike@gmail.com',
+    factura:'0019229j3',
+    rfc: "MIKE74JD944"
 }, {
-    key: '2',
-    name: 'John',
-    monto: 42,
-    fecha: '10 junio 2018',
-    factura:'0019229j3'
+    id: '2',
+    client: 'JOSE',
+    address: "Tulancingo, Hgo #506",
+    email: 'jose@gmail.com',
+    factura:'0019229j3',
+    rfc: "JOSE74JD944"
 }];
 
-const columns = [{
-    title: 'Name',
-    dataIndex: 'name',
-    key: 'name',
-}, {
-    title: 'Monto',
-    dataIndex: 'monto',
-    key: 'monto',
-    render:(monto)=><span>$ {monto}</span>
-}, {
-    title: 'Fecha',
-    dataIndex: 'fecha',
-    key: 'fecha',
-},{
-    title: 'Factura',
-    dataIndex: 'factura',
-    key: 'factura',
-}
-];
+const columns = [
+    {
+        title: 'Cliente',
+        dataIndex: 'client',
+        key:'client',
+    },
+    {
+        title: 'Dirección',
+        dataIndex: 'address',
+        key:'address'
+    },
+    {
+        title: 'E-mail',
+        dataIndex: 'email',
+        key:'email',
+    },
+    {
+        title: 'RFC',
+        dataIndex: 'rfc',
+        key: 'rfc'
+    },
+
+    ];
 
 class Clientes extends Component{
     render(){
         return(
             <Fragment>
-                <h2>Clientes Page</h2>
 
-                <BackTop visibilityHeight={100} />
-
-
-                <Table
+                <TableGeneric
                     dataSource={dataSource}
                     columns={columns}
-                    rowKey={record => record.key}
-                    scroll={{x:650}}
-                    style={{marginBottom:10}}
-
+                    title={"Clientes Page"}
                 />
 
+                <BackTop visibilityHeight={100} />
 
             </Fragment>
         );

@@ -1,57 +1,56 @@
 import React, {Component, Fragment} from 'react';
-import {Table, BackTop} from 'antd';
+import {BackTop} from 'antd';
+import TableGeneric from "../generic/TableGeneric";
 
 const dataSource = [{
-    key: '1',
-    name: 'Mike',
+    id: '1',
+    banco: 'HSBC',
     monto: 32,
     fecha: '10 septiembre 2018',
-    factura:'0019229j3'
+    cuenta:'0019229j3'
 }, {
-    key: '2',
-    name: 'John',
+    id: '2',
+    banco: 'BANAMEX',
     monto: 42,
     fecha: '10 junio 2018',
-    factura:'0019229j3'
+    cuenta:'0019229j3'
 }];
 
 const columns = [{
-    title: 'Name',
-    dataIndex: 'name',
-    key: 'name',
+    title: 'Banco',
+    dataIndex: 'banco',
+    key: 'banco',
 }, {
-    title: 'Monto',
+    title: 'Cash',
     dataIndex: 'monto',
     key: 'monto',
     render:(monto)=><span>$ {monto}</span>
-}, {
+},
+    {
+      title:"Cuenta",
+      dataIndex:"cuenta",
+      key:"cuenta",
+    },
+    {
     title: 'Fecha',
     dataIndex: 'fecha',
     key: 'fecha',
-},{
-    title: 'Factura',
-    dataIndex: 'factura',
-    key: 'factura',
-}
+},
 ];
 
 class Bancos extends Component{
     render(){
         return(
             <Fragment>
-                <h2>Bancos Page</h2>
+
+                <TableGeneric
+                    dataSource={dataSource}
+                    columns={columns}
+                    title={"Bancos Page"}
+                />
 
                 <BackTop visibilityHeight={100} />
 
-
-                <Table
-                    dataSource={dataSource}
-                    columns={columns}
-                    rowKey={record => record.key}
-                    scroll={{x:650}}
-                    style={{marginBottom:10}}
-
-                />
 
 
             </Fragment>
