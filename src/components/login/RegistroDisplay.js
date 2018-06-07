@@ -23,7 +23,7 @@ class RegistroDisplay extends Component{
         let {registroData} = this.state;
         return(
             <div className={"logIn"}>
-                <div className={"header"}>
+                <div className={"tileStyle"}>
                     <img src="http://icons.iconarchive.com/icons/custom-icon-design/pretty-office-11/512/shop-icon.png" alt="logo" className={"logoPrincipal"}/>
                     <span className={"welcome"}>Registro</span>
 
