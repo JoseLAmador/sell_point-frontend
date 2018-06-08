@@ -55,7 +55,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #f28326;
+  background: #7CC097;
   margin: 0;
   padding: 32px;
 }
@@ -64,5 +64,22 @@
   color: white;
 }
 
+.ant-menu-horizontal {
+    line-height: 30px !important;
+}
+
+.ant-menu-inline {
+    text-align: left !important;
+}
+
 /*MENU END*/
+
+.iconStyleText{
+    color:black;
+}
+
+.iconFont{
+    font-size: 16px;
+    font-weight:bold;
+}
 

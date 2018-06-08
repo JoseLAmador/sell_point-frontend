@@ -2,8 +2,6 @@ import React from 'react';
 import {Icon, Menu} from 'antd';
 import {Link} from 'react-router-dom';
 
-const SubMenu = Menu.SubMenu;
-
 const LeftSide = ({onOpenChange, openKeys})=>{
     return(
         <Menu
@@ -14,52 +12,45 @@ const LeftSide = ({onOpenChange, openKeys})=>{
             onOpenChange={onOpenChange}
 
         >
-            <SubMenu  key="sub1" title={<div>
-                <Icon type="shopping-cart" style={{fontSize:15, fontWeight:'bold'}}/>
-                <span style={{fontWeight:'bold', }}>Tiendita 1</span></div>}
-            >
                 <Menu.Item key="1" disabled={false}>
-                    <Link to={'/shop/gastos'} >Gastos</Link>
+                    <Icon type="pushpin-o" className={"iconStyleText iconFont"}/>
+                    <span><Link to={'/shop/gastos'} className={"iconStyleText"} >Gastos</Link></span>
                 </Menu.Item>
 
                 <Menu.Item key="2" disabled={false}>
-                    <Link to={'/shop/inventario'} >Inventario</Link>
+                    <Icon type="file-text" className={"iconStyleText iconFont"} />
+                    <span><Link to={'/shop/inventario'} className={"iconStyleText"} >Inventario</Link></span>
                 </Menu.Item>
 
                 <Menu.Item key="3" disabled={false}>
-                    <Link to={'/shop/compras'} >Compras</Link>
+                    <Icon type="shopping-cart" className={"iconStyleText iconFont"} />
+                    <span><Link to={'/shop/compras'} className={"iconStyleText"} >Compras</Link></span>
                 </Menu.Item>
 
                 <Menu.Item key="4" disabled={false}>
-                    <Link to={'/shop/ventas'} >Ventas</Link>
+                    <Icon type="export" className={"iconStyleText iconFont"} />
+                    <span><Link to={'/shop/ventas'} className={"iconStyleText"} >Ventas</Link></span>
                 </Menu.Item>
 
                 <Menu.Item key="5" disabled={false}>
-                    <Link to={'/shop/bancos'} >Bancos</Link>
+                    <Icon type="credit-card" className={"iconStyleText iconFont"} />
+                    <span><Link to={'/shop/bancos'} className={"iconStyleText"} >Bancos</Link></span>
                 </Menu.Item>
 
                 <Menu.Item key="6" disabled={false}>
-                    <Link to={'/shop/reportes'} >Reportes de Venta</Link>
+                    <Icon type="folder" className={"iconStyleText iconFont"} />
+                    <span><Link to={'/shop/reportes'} className={"iconStyleText"} >Reportes de Venta</Link></span>
                 </Menu.Item>
 
                 <Menu.Item key="7" disabled={false}>
-                    <Link to={'/shop/proveedores'} >Proveedores</Link>
+                    <Icon type="team" className={"iconStyleText iconFont"} />
+                    <span><Link to={'/shop/proveedores'} className={"iconStyleText"} >Proveedores</Link></span>
                 </Menu.Item>
 
                 <Menu.Item key="8" disabled={false}>
-                    <Link to={'/shop/clientes'} >Clientes</Link>
+                    <Icon type="user" className={"iconStyleText iconFont"} />
+                    <span><Link to={'/shop/clientes'} className={"iconStyleText"} >Clientes</Link></span>
                 </Menu.Item>
-            </SubMenu>
-
-                <SubMenu  key="sub2" title={<div><Icon type="shopping-cart" style={{fontSize:15, fontWeight:'bold'}}/>
-                    <span style={{fontWeight:'bold', }}>Tiendita 2</span></div>}>
-                    <Menu.Item key="9" disabled={false}>
-                        <Link to={'/login'} >subMenu 1</Link>
-                    </Menu.Item>
-                    <Menu.Item key="10" disabled={false}>
-                        <Link to={'/registro'} >subMenu 2</Link>
-                    </Menu.Item>
-            </SubMenu>
 
         </Menu>
     );
