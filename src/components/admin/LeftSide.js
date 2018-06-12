@@ -13,43 +13,59 @@ const LeftSide = ({onOpenChange, openKeys})=>{
 
         >
                 <Menu.Item key="1" disabled={false}>
-                    <Icon type="pushpin-o" className={"iconStyleText iconFont"}/>
-                    <span><Link to={'/shop/gastos'} className={"iconStyleText"} >Gastos</Link></span>
+                    <Link to={'/shop/gastos'} >
+                        <Icon type="pushpin-o" className={"iconStyleText iconFont"}/>
+                        <span className={"iconStyleText"}>Gastos</span>
+                    </Link>
                 </Menu.Item>
 
                 <Menu.Item key="2" disabled={false}>
-                    <Icon type="file-text" className={"iconStyleText iconFont"} />
-                    <span><Link to={'/shop/inventario'} className={"iconStyleText"} >Inventario</Link></span>
+                    <Link to={'/shop/inventario'} >
+                        <Icon type="file-text" className={"iconStyleText iconFont"} />
+                        <span className={"iconStyleText"}>Inventario</span>
+                    </Link>
                 </Menu.Item>
 
                 <Menu.Item key="3" disabled={false}>
-                    <Icon type="shopping-cart" className={"iconStyleText iconFont"} />
-                    <span><Link to={'/shop/compras'} className={"iconStyleText"} >Compras</Link></span>
+                    <Link to={'/shop/compras'} >
+                        <Icon type="shopping-cart" className={"iconStyleText iconFont"} />
+                        <span className={"iconStyleText"}>Compras</span>
+                    </Link>
                 </Menu.Item>
 
                 <Menu.Item key="4" disabled={false}>
-                    <Icon type="export" className={"iconStyleText iconFont"} />
-                    <span><Link to={'/shop/ventas'} className={"iconStyleText"} >Ventas</Link></span>
+                    <Link to={'/shop/ventas'} >
+                        <Icon type="export" className={"iconStyleText iconFont"} />
+                        <span className={"iconStyleText"}>Ventas</span>
+                    </Link>
                 </Menu.Item>
 
                 <Menu.Item key="5" disabled={false}>
-                    <Icon type="credit-card" className={"iconStyleText iconFont"} />
-                    <span><Link to={'/shop/bancos'} className={"iconStyleText"} >Bancos</Link></span>
+                    <Link to={'/shop/bancos'} >
+                        <Icon type="credit-card" className={"iconStyleText iconFont"} />
+                        <span className={"iconStyleText"}>Bancos</span>
+                    </Link>
                 </Menu.Item>
 
                 <Menu.Item key="6" disabled={false}>
-                    <Icon type="folder" className={"iconStyleText iconFont"} />
-                    <span><Link to={'/shop/reportes'} className={"iconStyleText"} >Reportes de Venta</Link></span>
+                    <Link to={'/shop/reportes'} >
+                        <Icon type="folder" className={"iconStyleText iconFont"} />
+                        <span className={"iconStyleText"}>Reportes de Venta</span>
+                    </Link>
                 </Menu.Item>
 
                 <Menu.Item key="7" disabled={false}>
-                    <Icon type="team" className={"iconStyleText iconFont"} />
-                    <span><Link to={'/shop/proveedores'} className={"iconStyleText"} >Proveedores</Link></span>
+                    <Link to={'/shop/proveedores'} >
+                        <Icon type="team" className={"iconStyleText iconFont"} />
+                        <span className={"iconStyleText"}>Proveedores</span>
+                    </Link>
                 </Menu.Item>
 
                 <Menu.Item key="8" disabled={false}>
-                    <Icon type="user" className={"iconStyleText iconFont"} />
-                    <span><Link to={'/shop/clientes'} className={"iconStyleText"} >Clientes</Link></span>
+                    <Link to={'/shop/clientes'} >
+                        <Icon type="user" className={"iconStyleText iconFont"} />
+                        <span className={"iconStyleText"}>Clientes</span>
+                    </Link>
                 </Menu.Item>
 
         </Menu>

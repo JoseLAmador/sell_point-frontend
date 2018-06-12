@@ -12,7 +12,7 @@ class Inicio extends Component{
                         <span className="heading-primary--main">Crear tu tienda online es fácil</span>
                         <span className="heading-primary--sub">ArnusShop</span>
                     </h1>
-                    <Button>Leer mas</Button>
+                    <Button>Empezar</Button>
                 </div>
             </header>
         );

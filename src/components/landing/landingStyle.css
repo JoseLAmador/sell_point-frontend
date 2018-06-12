@@ -24,6 +24,8 @@
     display:flex;
     justify-content: center;
     align-items: center;
+    font-weight: bold;
+    color: black;
 }
 
 
@@ -55,19 +57,6 @@
 @media only screen and (max-width: 600px) {
     .heading-primary--sub {
         letter-spacing: .5rem; } }
-
-
-.ant-btn:active, .ant-btn.active {
-    color: red !important;
-    background-color: #fff;
-    border-color: yellow !important;
-}
-
-.ant-btn:hover, .ant-btn:focus {
-    color: darkblue !important;
-    background-color: #fff;
-    border-color: deeppink !important;
-}
 
 /*SECTION 1*/
 
@@ -261,3 +250,18 @@
         padding: 4rem 0; }
 }
 
+
+/*MORE DETAILS*/
+
+.ant-input:focus {
+    border-color: #7CC097 !important;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner, .ant-checkbox-indeterminate .ant-checkbox-inner {
+    background-color: #7CC097 !important;
+    border-color: #7CC097 !important;
+}
+
+.ant-checkbox-wrapper:hover .ant-checkbox-inner, .ant-checkbox:hover .ant-checkbox-inner, .ant-checkbox-input:focus + .ant-checkbox-inner {
+    border-color: #7CC097 !important;
+}

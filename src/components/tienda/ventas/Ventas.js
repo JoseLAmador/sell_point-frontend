@@ -1,6 +1,7 @@
 import React, {Component, Fragment} from 'react';
 import {BackTop} from 'antd';
 import TableGeneric from "../generic/TableGeneric";
+import NewVenta from './NewVenta';
 
 const dataSource = [{
     id: '1',
@@ -44,7 +45,42 @@ const columns = [
 
 
 class Ventas extends Component{
+    state={
+        visible:false,
+    };
+
+    saveFormRef = (form)=>{
+        this.form = form;
+    };
+
+    handleCancel=()=>{
+        this.setState({
+            visible: false,
+        });
+
+        const form = this.form;
+        form.resetFields();
+    };
+
+    handleCreate = (e) =>{
+        const form = this.form;
+        e.preventDefault();
+
+        form.validateFields((err, values)=>{
+            if(!err){
+                console.log(values);
+            }
+        })
+    };
+
+    showModal = () => {
+        this.setState({
+            visible: true,
+        });
+    };
+
     render(){
+        const {visible} = this.state;
         return(
             <Fragment>
 
@@ -52,7 +88,14 @@ class Ventas extends Component{
                     dataSource={dataSource}
                     columns={columns}
                     title={"Ventas Page"}
+                    showModal={this.showModal}
+                />
 
+                <NewVenta
+                    ref={this.saveFormRef}
+                    visible={visible}
+                    onCancel = {this.handleCancel}
+                    onCreate = {this.handleCreate}
                 />
 
                 <BackTop visibilityHeight={100} />

@@ -55,7 +55,7 @@ class Login extends Component{
                         htmlType={"submit"}
                         className={"login-form-button "}
                         size="large"
-                        style={{borderColor:'white', backgroundColor:'#a52915'}}
+                        style={{borderColor:'#B9563F', backgroundColor:'#B9563F'}}
                     >
                         LogIn
                     </Button>
