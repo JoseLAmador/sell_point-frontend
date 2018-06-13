@@ -93,7 +93,7 @@ class Registro extends Component{
                         htmlType={"submit"}
                         className={"login-form-button "}
                         size="large"
-                        style={{borderColor:'white', backgroundColor:'#a52915'}}
+                        style={{borderColor:'#B9563F', backgroundColor:'#B9563F'}}
                     >
                         Registrate
                     </Button>

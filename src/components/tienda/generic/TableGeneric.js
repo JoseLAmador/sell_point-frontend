@@ -1,7 +1,13 @@
 import React, {Fragment} from 'react';
-import {Table, Divider} from 'antd';
+import {Table, Divider, Button} from 'antd';
 
-const TableGeneric = ({dataSource, columns, title})=>{
+const rowSelection = {
+    onChange: (selectedRowKeys, selectedRows) => {
+        console.log(`selectedRowKeys: ${selectedRowKeys}`, 'selectedRows: ', selectedRows);
+    }}
+
+const TableGeneric = ({dataSource, columns, title, showModal})=>{
+
     return(
         <Fragment>
 
@@ -19,7 +25,13 @@ const TableGeneric = ({dataSource, columns, title})=>{
                 rowKey={record => record.id}
                 scroll={{x:650}}
                 style={{marginBottom:10}}
+                rowSelection={rowSelection}
             />
+
+            <div style={{marginBottom:10, textAlign: 'left' }}>
+                <Button type="primary" onClick={showModal} style={{borderColor:'#B9563F', backgroundColor:'#B9563F'}}>Agregar</Button>
+            </div>
+
         </Fragment>
     );
 };

@@ -37,19 +37,20 @@ class Admin extends Component{
                     trigger={null}
                     collapsible
                     collapsed={this.state.collapsed}
-                    width={250} style={{ background: '#fff' }}
+                    width={250} style={{ background: '#fff'}}
+
                 >
                     <div className="logo" >{!this.state.collapsed?
                         <div>
                         <Icon type="shop" style={{marginRight:10, color:'white', fontSize:20, fontWeight:'bold'}} />
-                        <span style={{color:'white'}}><strong>TIENDITAS</strong></span>
+                        <span style={{color:'white'}}><strong>TIENDITA</strong></span>
                     </div>:<div>
                             <Icon type="shop" style={{color:'white', fontSize:20, fontWeight:'bold'}}/>
                         </div>}</div>
                     <LeftSide onOpenChange={this.onOpenChange} openKeys={this.state.openKeys}/>
                 </Sider>
                 <Layout>
-                    <Header style={{ background: '#f28326', padding: 0 }}>
+                    <Header style={{ background: '#7CC097', padding: 0}} >
                        <Navbar
                         collapsed={this.state.collapsed}
                         toggle={this.toggle}

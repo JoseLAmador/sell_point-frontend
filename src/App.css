@@ -1,5 +1,6 @@
 @import "./components/login/loginStyle.css";
 @import "./components/tienda/tableStyle.css";
+@import "./components/landingProducts/landingProducts.css";
 
 .App {
   text-align: center;
@@ -55,7 +56,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #f28326;
+  background: #7CC097;
   margin: 0;
   padding: 32px;
 }
@@ -64,5 +65,53 @@
   color: white;
 }
 
+.ant-menu-horizontal {
+    line-height: 30px !important;
+}
+
+.ant-menu-inline {
+    text-align: left !important;
+}
+
 /*MENU END*/
+
+.iconStyleText{
+    color:black;
+}
+
+.iconFont{
+    font-size: 16px;
+    font-weight:bold;
+}
+
+/*MENUS ACTIVES*/
+
+.ant-menu-vertical .ant-menu-item:after, .ant-menu-vertical-left .ant-menu-item:after, .ant-menu-vertical-right .ant-menu-item:after, .ant-menu-inline .ant-menu-item:after{
+  border-right: 3px solid #7CC097 !important;
+}
+
+.ant-pagination-item-active {
+  border-color: #7CC097 !important;
+}
+
+.ant-pagination-item-active:focus a, .ant-pagination-item-active:hover a{
+  color: #7CC097 !important;
+}
+
+.ant-pagination-item-active a{
+  color:#7CC097 !important;
+}
+
+/*BUTTOM FORM*/
+
+.buttonGuardar{
+  border-color:#B9563F !important;
+  background-color:#B9563F !important;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+
 
