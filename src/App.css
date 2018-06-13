@@ -1,5 +1,6 @@
 @import "./components/login/loginStyle.css";
 @import "./components/tienda/tableStyle.css";
+@import "./components/landingProducts/landingProducts.css";
 
 .App {
   text-align: center;

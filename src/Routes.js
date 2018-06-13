@@ -4,6 +4,7 @@ import LoginDisplay from './components/login/LoginDisplay';
 import RegistroDisplay from "./components/login/RegistroDisplay";
 import Admin from "./components/admin/Admin";
 import Landing from "./components/landing/Landing";
+import LandingProducts from "./components/landingProducts/Principal";
 
 
 export const Routes=()=>(
@@ -13,7 +14,10 @@ export const Routes=()=>(
 
         <Route path={'/shop'} component={Admin} />
 
+        <Route path={"/landing"} component={LandingProducts} />
+
         <Route path={"/"} component={Landing} />
+
 
 
     </Switch>
