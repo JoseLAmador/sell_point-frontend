@@ -114,5 +114,33 @@ a:hover {
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 35vh, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 35vh, 0 100%); } }
 
+/*CAR LIST*/
+
+.section-cart-list {
+    background-color: #f7f7f7;
+    padding: 12rem 6rem;
+    margin-top: -20vh; }
+@media only screen and (max-width: 900px) {
+    .section-cart-list {
+        padding: 10rem 3rem;
+    }
+}
+
+.ant-card-body{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.cardButtons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ant-input-number-input{
+    text-align: center !important;
+}
+
 
 

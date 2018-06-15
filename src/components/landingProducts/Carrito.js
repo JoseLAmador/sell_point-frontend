@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import HeaderProducts from "./SectionsProducts/HeaderProducts";
 import ListCarrito from './listCarrito/ListCarrito';
+import Pie from "../landing/Pie";
 
 
 class Carrito extends Component{
@@ -14,6 +15,7 @@ class Carrito extends Component{
                     <ListCarrito/>
 
                 </main>
+                <Pie/>
 
             </div>
         );
