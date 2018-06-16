@@ -1,9 +1,9 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {Link} from 'react-router-dom';
-class SectionUno extends Component{
-    render(){
+
+const HeaderProducts = ({title})=>{
         return(
-            <header className="headerProduct" id={"inicio"} >
+            <header className={"headerProductos"}>
                 <div className={"topright"}>
                     <Link to={'/landing'} className={"linkColor"}>
                         <span>Inicio</span>
@@ -16,15 +16,9 @@ class SectionUno extends Component{
                     </Link>
                 </div>
 
-                <div >
-                    <h1 className="heading-primary">
-                        <span className="heading-primary--main">ARNUR-SHOP</span>
-                        <span className="heading-primary--sub">Compra en linea de forma <strong>SEGURA</strong></span>
-                    </h1>
-                </div>
+                <h2 style={{color:'white'}}><strong>{title}</strong></h2>
             </header>
         );
-    }
-}
+};
 
-export default SectionUno;
+export default HeaderProducts;

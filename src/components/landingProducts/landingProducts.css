@@ -69,3 +69,78 @@
     justify-content: center;
     align-items: center;
 }
+
+.topright {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.topright a:not(:last-child) {
+    margin-right: 15px; }
+
+.linkColor{
+    color: white;
+}
+
+a:hover {
+    color: #7CC097 !important;
+}
+
+/*SECTION PRODUCTS*/
+.headerProductos {
+    height: 30vh;
+    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7)), url(../../imgs/business-commerce-daylight-916446.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    .headerProductos {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 30vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 30vh, 0 100%);
+        height: 40vh; } }
+@media only screen and (max-width: 600px) {
+    .headerProductos {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 35vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 35vh, 0 100%); } }
+
+/*CAR LIST*/
+
+.section-cart-list {
+    background-color: #f7f7f7;
+    padding: 12rem 6rem;
+    margin-top: -20vh; }
+@media only screen and (max-width: 900px) {
+    .section-cart-list {
+        padding: 10rem 3rem;
+    }
+}
+
+.ant-card-body{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.cardButtons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ant-input-number-input{
+    text-align: center !important;
+}
+
+
+

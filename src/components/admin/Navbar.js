@@ -17,7 +17,7 @@ const Navbar = ({toggle, collapsed})=>{
 
             <span>
                 <Menu mode={"horizontal"} style={{borderRadius: '10px'}}>
-                    <SubMenu key={'sub1'} title={<span>Hello, Shop</span>}>
+                    <SubMenu key={'sub1'} title={<span>Hello, ArnurShop</span>}>
                         <Menu.Item>
                             <span>
                                 <Icon type={'logout'}/>
