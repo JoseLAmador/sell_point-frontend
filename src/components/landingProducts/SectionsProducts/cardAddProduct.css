@@ -100,8 +100,8 @@
     font-size: 14px;
     letter-spacing: 1.5px;
     line-height: 1em;
-    margin: 15px 40px;
     text-transform: uppercase;
+    display: flex;
 }
 .snip1555 li {
     display: inline-block;
@@ -153,4 +153,10 @@
     top: 8px;
     right: 16px;
     background-color: transparent;
+}
+
+@media only screen and (max-width:600px){
+    .topMenu{
+        right: 0px;
+    }
 }
