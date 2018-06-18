@@ -1,20 +1,10 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
+import MenuProducts from "./SectionsProducts/MenuProducts";
 class SectionUno extends Component{
     render(){
         return(
             <header className="headerProduct" id={"inicio"} >
-                <div className={"topright"}>
-                    <Link to={'/landing'} className={"linkColor"}>
-                        <span>Inicio</span>
-                    </Link>
-                    <Link to={'/productos'} className={"linkColor"}>
-                        <span>Productos</span>
-                    </Link>
-                    <Link to={'/carrito'} className={"linkColor"}>
-                        <span>Carrito</span>
-                    </Link>
-                </div>
+                <MenuProducts />
 
                 <div >
                     <h1 className="heading-primary">

@@ -14,8 +14,8 @@ const ListCarrito = ()=>{
                 <Card
                     style={{display:'flex', marginTop: 15 }}
                 >
-                    <div style={{width:262, height:159, backgroundColor:'red'}}>
-                        <img alt="example" src="https://images-na.ssl-images-amazon.com/images/I/81ePlqKHKCL._SL1500_.jpg" height={'100%'} width={'100%'} />
+                    <div style={{width:262, height:159}}>
+                        <img alt="example" src="https://images-na.ssl-images-amazon.com/images/I/81ePlqKHKCL._SL1500_.jpg" height={'100%'} width={'100%'} style={{objectFit:'contain', objectPosition:'center'}} />
                     </div>
 
                     <Meta
@@ -33,8 +33,8 @@ const ListCarrito = ()=>{
                     style={{ display:'flex', marginTop: 15 }}
 
                 >
-                    <div style={{width:262, height:159, backgroundColor:'red'}}>
-                        <img alt="example" src="https://images-na.ssl-images-amazon.com/images/I/71W0TuD7VLL._SL1134_.jpg" height={'100%'} width={'100%'} />
+                    <div style={{width:262, height:159,}}>
+                        <img alt="example" src="https://images-na.ssl-images-amazon.com/images/I/71W0TuD7VLL._SL1134_.jpg" height={'100%'} width={'100%'} style={{objectFit:'contain', objectPosition:'center'}} />
                     </div>
                     <Meta
                         title="Laptop Acer 15.6,AMD"
@@ -50,8 +50,8 @@ const ListCarrito = ()=>{
                 <Card
                     style={{ display:'flex', marginTop: 15 }}
                 >
-                    <div style={{width:262, height:159, backgroundColor:'red'}}>
-                        <img alt="example" src="https://images-na.ssl-images-amazon.com/images/I/81OXg-wXMgL._SL1500_.jpg" height={'100%'} width={'100%'} />
+                    <div style={{width:262, height:159}}>
+                        <img alt="example" src="https://images-na.ssl-images-amazon.com/images/I/81OXg-wXMgL._SL1500_.jpg" height={'100%'} width={'100%'} style={{objectFit:'contain', objectPosition:'center'}} />
                     </div>
 
                     <Meta

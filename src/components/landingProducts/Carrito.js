@@ -13,7 +13,6 @@ class Carrito extends Component{
                 />
                 <main>
                     <ListCarrito/>
-
                 </main>
                 <Pie/>
 

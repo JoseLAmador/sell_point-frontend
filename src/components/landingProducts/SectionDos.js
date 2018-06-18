@@ -1,4 +1,48 @@
 import React, {Component} from 'react';
+import CarAddProduct from "./SectionsProducts/CardAddProduct";
+
+const data =[
+    {
+        title: 'Mexico Home Adidas',
+        description: 'Administra tus pedidos y tu inventario en todo momento.',
+        image: 'https://images-na.ssl-images-amazon.com/images/I/81ePlqKHKCL._SL1500_.jpg'
+    },
+    {
+        title: 'Adaptador USB a HDMI',
+        description: 'Ofrece múltiples opciones de pago como tarjetas de crédito y Paypal',
+        image: 'https://http2.mlstatic.com/sabrent-usb-31-type-c-to-hdmi-adapter-da-hdmc-D_NQ_NP_854424-MLM26629775914_012018-O.webp'
+    },
+    {
+        title: 'Laptop Acer 15.6",AMD ',
+        description: 'Crea, administra y comparte cupones promocionales para',
+        image: 'https://images-na.ssl-images-amazon.com/images/I/71W0TuD7VLL._SL1134_.jpg'
+    },
+    {
+        title: 'Mexico Home Adidas',
+        description: 'Administra tus pedidos y tu inventario en todo momento.',
+        image: 'https://images-na.ssl-images-amazon.com/images/I/81ePlqKHKCL._SL1500_.jpg'
+    },
+    {
+        title: 'Adaptador USB a HDMI',
+        description: 'Ofrece múltiples opciones de pago como tarjetas de crédito y Paypal',
+        image: 'https://http2.mlstatic.com/sabrent-usb-31-type-c-to-hdmi-adapter-da-hdmc-D_NQ_NP_854424-MLM26629775914_012018-O.webp'
+    },
+    {
+        title: 'Laptop Acer 15.6",AMD ',
+        description: 'Crea, administra y comparte cupones promocionales para',
+        image: 'https://images-na.ssl-images-amazon.com/images/I/71W0TuD7VLL._SL1134_.jpg'
+    },
+    {
+        title: 'Mexico Home Adidas',
+        description: 'Administra tus pedidos y tu inventario en todo momento.',
+        image: 'https://images-na.ssl-images-amazon.com/images/I/81ePlqKHKCL._SL1500_.jpg'
+    },
+    {
+        title: 'Adaptador USB a HDMI',
+        description: 'Ofrece múltiples opciones de pago como tarjetas de crédito y Paypal',
+        image: 'https://http2.mlstatic.com/sabrent-usb-31-type-c-to-hdmi-adapter-da-hdmc-D_NQ_NP_854424-MLM26629775914_012018-O.webp'
+    },
+];
 
 class SectionDos extends Component{
     render(){
@@ -9,76 +53,9 @@ class SectionDos extends Component{
                 </div>
 
                 <div className={"first-section-two-products"} >
-
-                    <div className="cardSectionTwo">
-                        <img src={require('../../imgs/imagen4.jpg')} alt={"image_1"} className={"imgStyle"}/>
-                        <div className="container">
-                            <h4><b>2016-2017 Mexico Home Adidas</b></h4>
-                            <p>Administra tus pedidos y tu inventario en todo momento.</p>
-                        </div>
-                    </div>
-
-                    <div className="cardSectionTwo">
-                        <img src={require('../../imgs/imagen2.jpg')} alt={"image_1"} className={"imgStyle"}/>
-                        <div className="container">
-                            <h4><b>Adaptador USB a HDMI</b></h4>
-                            <p>Ofrece múltiples opciones de pago como tarjetas de crédito y Paypal
-                            </p>
-                        </div>
-                    </div>
-
-                    <div className="cardSectionTwo">
-                        <img src={require('../../imgs/imagen3.jpg')} alt={"image_1"} className={"imgStyle"}/>
-                        <div className="container">
-                            <h4><b>Laptop Acer 15.6",AMD </b></h4>
-                            <p>Crea, administra y comparte cupones promocionales para
-                            </p>
-                        </div>
-                    </div>
-
-                    <div className="cardSectionTwo">
-                        <img src={require('../../imgs/imagen1.jpg')} alt={"image_1"} className={"imgStyle"}/>
-                        <div className="container">
-                            <h4><b>MidWest Exercise Pen</b></h4>
-                            <p>Administra tus pedidos y tu inventario en todo momento.</p>
-                        </div>
-                    </div>
-
-                    <div className="cardSectionTwo">
-                        <img src={require('../../imgs/imagen1.jpg')} alt={"image_1"} className={"imgStyle"}/>
-                        <div className="container">
-                            <h4><b>MidWest Exercise Pen</b></h4>
-                            <p>Ofrece múltiples opciones de pago como tarjetas de crédito y Paypal
-                            </p>
-                        </div>
-                    </div>
-
-                    <div className="cardSectionTwo">
-                        <img src={require('../../imgs/imagen3.jpg')} alt={"image_1"} className={"imgStyle"}/>
-                        <div className="container">
-                            <h4><b>Laptop Acer 15.6",AMD </b></h4>
-                            <p>Crea, administra y comparte cupones promocionales para
-                            </p>
-                        </div>
-                    </div>
-
-                    <div className="cardSectionTwo">
-                        <img src={require('../../imgs/imagen2.jpg')} alt={"image_1"} className={"imgStyle"}/>
-                        <div className="container">
-                            <h4><b>Adaptador USB a HDMI</b></h4>
-                            <p>Administra tus pedidos y tu inventario en todo momento.</p>
-                        </div>
-                    </div>
-
-                    <div className="cardSectionTwo">
-                        <img src={require('../../imgs/imagen4.jpg')} alt={"image_1"} className={"imgStyle"}/>
-                        <div className="container">
-                            <h4><b>2016-2017 Mexico Home Adidas</b></h4>
-                            <p>Ofrece múltiples opciones de pago como tarjetas de crédito y Paypal
-                            </p>
-                        </div>
-                    </div>
-
+                    {data.map((data, index)=>{
+                        return <CarAddProduct data={data} key={index}/>
+                    })}
                 </div>
 
             </section>
