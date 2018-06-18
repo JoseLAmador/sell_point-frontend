@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3b1fabf-f05a-47c8-a554-f98c5e178cce" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/landingProducts/SectionsProducts/CardAddProduct.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/landingProducts/SectionsProducts/MenuProducts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/landingProducts/SectionsProducts/cardAddProduct.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/landingProducts/Carrito.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/landingProducts/Carrito.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/landingProducts/ListProducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/landingProducts/ListProducts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/landingProducts/SectionDos.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/landingProducts/SectionDos.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/landingProducts/SectionUno.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/landingProducts/SectionUno.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/landingProducts/SectionsProducts/HeaderProducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/landingProducts/SectionsProducts/HeaderProducts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/landingProducts/landingProducts.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/landingProducts/landingProducts.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/landingProducts/listCarrito/ListCarrito.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/landingProducts/listCarrito/ListCarrito.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/login/LoginDisplay.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login/LoginDisplay.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/login/RegistroDisplay.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login/RegistroDisplay.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,13 +17,49 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CardAddProduct.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/landingProducts/SectionsProducts/CardAddProduct.js">
+      <file leaf-file-name="landingStyle.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/landing/landingStyle.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+            <state relative-caret-position="15">
+              <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="landingProducts.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/landingProducts/landingProducts.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="363">
+              <caret line="98" column="1" selection-start-line="98" selection-start-column="1" selection-end-line="98" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="loginStyle.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/login/loginStyle.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="486">
+              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="52" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginDisplay.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/login/LoginDisplay.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="316">
+              <caret line="38" column="74" lean-forward="true" selection-start-line="38" selection-start-column="74" selection-end-line="38" selection-end-column="97" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegistroDisplay.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/login/RegistroDisplay.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="307">
+              <caret line="38" column="94" selection-start-line="38" selection-start-column="94" selection-end-line="38" selection-end-column="94" />
               <folding>
-                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#0#39#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -86,8 +112,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/login/RegistroDisplay.js" />
-        <option value="$PROJECT_DIR$/src/components/admin/Sections.js" />
         <option value="$PROJECT_DIR$/src/components/landing/SectionFour.js" />
         <option value="$PROJECT_DIR$/src/index.css" />
         <option value="$PROJECT_DIR$/src/components/admin/LeftSide.js" />
@@ -137,6 +161,8 @@
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/components/landingProducts/SectionDos.js" />
         <option value="$PROJECT_DIR$/src/components/landingProducts/SectionsProducts/CardAddProduct.js" />
+        <option value="$PROJECT_DIR$/src/components/login/LoginDisplay.js" />
+        <option value="$PROJECT_DIR$/src/components/login/RegistroDisplay.js" />
       </list>
     </option>
   </component>
@@ -190,15 +216,14 @@
               <item name="sell_point-frontend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="landingProducts" type="462c0819:PsiDirectoryNode" />
+              <item name="landing" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sell_point-frontend" type="b2602c69:ProjectViewProjectNode" />
               <item name="sell_point-frontend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="landingProducts" type="462c0819:PsiDirectoryNode" />
-              <item name="SectionsProducts" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -209,7 +234,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="SearchEverywhereHistoryKey" value="gen&#9;FILE&#9;file:///home/josel/Documentos/FIXTER/PUNTO_VENTA/FRONT/sell_point-frontend/src/components/tienda/generic/TableGeneric.js" />
+    <property name="SearchEverywhereHistoryKey" value="linkC&#9;null&#9;null&#10;linkCol&#9;null&#9;null&#10;gen&#9;FILE&#9;file:///home/josel/Documentos/FIXTER/PUNTO_VENTA/FRONT/sell_point-frontend/src/components/tienda/generic/TableGeneric.js" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Demos/ant-design-pro" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -258,12 +283,12 @@
       <workItem from="1528994707954" duration="12031000" />
       <workItem from="1529095566049" duration="5013000" />
       <workItem from="1529101921985" duration="5318000" />
-      <workItem from="1529344109346" duration="2776000" />
+      <workItem from="1529344109346" duration="3073000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112527000" />
+    <option name="totallyTimeSpent" value="112824000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="30" width="1366" height="738" extended-state="6" />
@@ -297,13 +322,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/tienda/ventas/Ventas.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="79" column="6" lean-forward="true" selection-start-line="79" selection-start-column="6" selection-end-line="79" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/tienda/reportes/Reportes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -332,24 +350,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/login/Login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="57" column="79" selection-start-line="57" selection-start-column="79" selection-end-line="57" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/tienda/bancos/Bancos.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="85" column="45" selection-start-line="85" selection-start-column="45" selection-end-line="85" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/login/LoginDisplay.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="25" column="21" lean-forward="true" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -364,13 +368,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="428">
           <caret line="95" column="32" lean-forward="true" selection-start-line="95" selection-start-column="32" selection-end-line="95" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/login/loginStyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="52" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -539,13 +536,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/landing/landingStyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="62" selection-start-line="62" selection-end-line="68" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/landingProducts/ListProducts.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="292">
@@ -560,13 +550,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="415">
           <caret line="154" column="34" selection-start-line="154" selection-start-column="34" selection-end-line="154" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/landingProducts/landingProducts.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="103" column="16" selection-start-line="103" selection-start-column="16" selection-end-line="103" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -667,6 +650,51 @@
           <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/landing/landingStyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/landingProducts/landingProducts.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="98" column="1" selection-start-line="98" selection-start-column="1" selection-end-line="98" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/login/loginStyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="52" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/login/Login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="57" column="79" selection-start-line="57" selection-start-column="79" selection-end-line="57" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/login/LoginDisplay.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="38" column="74" lean-forward="true" selection-start-line="38" selection-start-column="74" selection-end-line="38" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/login/RegistroDisplay.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="38" column="94" selection-start-line="38" selection-start-column="94" selection-end-line="38" selection-end-column="94" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>

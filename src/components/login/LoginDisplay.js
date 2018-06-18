@@ -36,7 +36,7 @@ class LoginDisplay extends Component{
                         handleText={this.handleText}
                     />
                     <span>
-                        No tienes cuenta?, <Link to={"/registro"}><strong className={"linkColor"}>REGISTRATE</strong></Link>
+                        No tienes cuenta?, <Link to={"/registro"}><strong style={{color:'black'}}>REGISTRATE</strong></Link>
                     </span>
                 </div>
 
