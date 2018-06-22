@@ -1,13 +1,12 @@
 import React from 'react';
 import './cardAddProduct.css';
-import {Link} from 'react-router-dom';
 
-const CarAddProduct = ({data})=>{
+const CarAddProduct = ({data, addItemCart,item})=>{
     return(
         <figure className="snip1268">
             <div className="image">
                 <img src={data.image} alt="sq-sample4" />
-                <Link to={"/carrito"} className="add-to-cart">Add to Cart</Link>
+                <a className="add-to-cart" onClick={()=>addItemCart(item)}>Add to Cart</a>
             </div>
             <figcaption>
                 <h2>{data.title}</h2>
