@@ -36,7 +36,7 @@ class RegistroDisplay extends Component{
                         handleText={this.handleText}
                     />
                     <span>
-                        Ya tienes cuenta?, <Link to={"/login"}><strong className={"linkColor"}>INICIA SESION</strong></Link>
+                        Ya tienes cuenta?, <Link to={"/login"}><strong style={{color:'black'}}>INICIA SESION</strong></Link>
                     </span>
                 </div>
 
