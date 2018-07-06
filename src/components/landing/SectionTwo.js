@@ -16,7 +16,7 @@ class SectionTwo extends Component{
                     </div>
 
                     <div className="cardSectionTwo">
-                        <img src={require('../../imgs/calendar.svg')} alt={"image_1"} className={"imgStyle"}/>
+                        <img src={require('../../imgs/get-money.svg')} alt={"image_1"} className={"imgStyle"}/>
                         <div className="container">
                             <h4><b>Recibe pagos facilmente</b></h4>
                             <p>Ofrece múltiples opciones de pago como tarjetas de crédito y Paypal
@@ -25,7 +25,7 @@ class SectionTwo extends Component{
                     </div>
 
                     <div className="cardSectionTwo">
-                        <img src={require('../../imgs/calendar.svg')} alt={"image_1"} className={"imgStyle"}/>
+                        <img src={require('../../imgs/bill.svg')} alt={"image_1"} className={"imgStyle"}/>
                         <div className="container">
                             <h4><b>Promueve las ventas</b></h4>
                             <p>Crea, administra y comparte cupones promocionales para

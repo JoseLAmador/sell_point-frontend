@@ -21,11 +21,11 @@ class Login extends Component{
         return(
             <Form onSubmit={this.handleSubmit} className={"login-form"}>
                 <FormItem>
-                    {getFieldDecorator('email', {
-                        rules: [{ required: true, message: 'Ingresa un correo electronico valido!', type:'email' }],
+                    {getFieldDecorator('userName', {
+                        rules: [{ required: true, message: 'Ingresa un correo electronico valido!',  }],
                     })(
                     <Input
-                        name={"email"}
+                        name={"username"}
                         onChange={handleText}
                         prefix={<Icon type={"user"} style={{color:'rgba(0,0,0,.25)'}} />}
                         placeholder={"E-mail"}

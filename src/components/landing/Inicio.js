@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Button} from 'antd';
+import {Link} from 'react-router-dom';
 import './landingStyle.css';
 
 class Inicio extends Component{
@@ -9,10 +9,10 @@ class Inicio extends Component{
 
                 <div >
                     <h1 className="heading-primary">
-                        <span className="heading-primary--main">Crear tu tienda online es fácil</span>
-                        <span className="heading-primary--sub">ArnusShop</span>
+                        <span className="heading-primary--main">Crear tu punto de venta es fácil</span>
+
                     </h1>
-                    <Button>Empezar</Button>
+                    <Link to={"/login"} className={"likeButton"}>Empezar</Link>
                 </div>
             </header>
         );

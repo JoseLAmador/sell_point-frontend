@@ -11,7 +11,10 @@ import 'antd/dist/antd.css';
 import {LocaleProvider} from 'antd';
 import sp from 'antd/lib/locale-provider/es_ES';
 
+import {checkIfUser} from "./components/redux/actions/users/userActions";
+
 export const store = configureStore();
+store.dispatch(checkIfUser());
 
 const WithRouter = ()=>(
   <BrowserRouter>
