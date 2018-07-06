@@ -1,4 +1,5 @@
 import api from "../../../django/Django";
+import {getClientes} from "../clientes/clientesActions";
 
 
 
@@ -59,6 +60,7 @@ export const checkIfUser=()=>(dispatch, getState)=>{
     if(userToken){
         //dispatch the functions
         dispatch(getUser());
+        dispatch(getClientes());
 
 
     }
