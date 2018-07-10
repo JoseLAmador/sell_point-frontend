@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import RegistroForm from "./Registro";
 import {Link} from 'react-router-dom';
+import logo from '../../imgs/cashier.png';
 
 
 class RegistroDisplay extends Component{
@@ -24,7 +25,7 @@ class RegistroDisplay extends Component{
         return(
             <div className={"logIn"}>
                 <div className={"tileStyle"}>
-                    <img src="http://icons.iconarchive.com/icons/custom-icon-design/pretty-office-11/512/shop-icon.png" alt="logo" className={"logoPrincipal"}/>
+                    <img src={logo} alt="logo" className={"logoPrincipal"}/>
                     <span className={"welcome"}>Registro</span>
 
                 </div>

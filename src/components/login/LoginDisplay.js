@@ -2,36 +2,52 @@ import React, {Component} from 'react';
 import LogIn from "./Login";
 import {Link} from 'react-router-dom';
 
+import * as userActions from '../redux/actions/users/userActions';
+import {message} from 'antd';
+import {connect} from 'react-redux';
+import {bindActionCreators} from 'redux';
+import logo from '../../imgs/cashier.png';
+
 
 class LoginDisplay extends Component{
     state={
-        userData:{}
+        data:{}
     };
 
     handleText=(e)=>{
-        let userData = this.state.userData;
+        let data = this.state.data;
         let field = e.target.name;
-        userData[field]=e.target.value;
-        this.setState({userData})
+        data[field]=e.target.value;
+        this.setState({data})
     };
 
     logIn=(data)=>{
-        console.log(data);
+
+        this.props.userActions.logIn(data)
+            .then(r=>{
+                this.props.history.push('/shop/clientes');
+                message.success(`Welcome ${data.username}`)
+            }).catch(e=>{
+            for (let i in e.response.data){
+                message.error(e.response.data[i])
+            }
+        })
     };
 
     render(){
-        let {userData} = this.state;
+        let {data} = this.state;
+
         return(
             <div className={"logIn"}>
                 <div className={"tileStyle"}>
-                    <img src="http://icons.iconarchive.com/icons/custom-icon-design/pretty-office-11/512/shop-icon.png" alt="logo" className={"logoPrincipal"}/>
+                    <img src={logo} alt="logo" className={"logoPrincipal"}/>
                     <span className={"welcome"}>Bienvenido</span>
 
                 </div>
 
                 <div>
                     <LogIn
-                        data={userData}
+                        data={data}
                         logIn={this.logIn}
                         handleText={this.handleText}
                     />
@@ -45,4 +61,17 @@ class LoginDisplay extends Component{
     }
 }
 
+function mapStateToProps(state) {
+    return{
+        state: state
+    }
+}
+
+function mapDispatchToProps(dispatch) {
+    return{
+        userActions:bindActionCreators(userActions, dispatch)
+    }
+}
+
+LoginDisplay = connect(mapStateToProps, mapDispatchToProps)(LoginDisplay);
 export default LoginDisplay;
