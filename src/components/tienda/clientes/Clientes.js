@@ -59,9 +59,11 @@ class Clientes extends Component{
         const form = this.form;
         e.preventDefault();
 
+        let {owner} = this.props;
+
         form.validateFields((err, values)=>{
             if(!err){
-                console.log(values);
+                values['owner_id'] = owner.id;
                 this.props.clientesActions.saveCliente(values)
                     .then(r=>{
                         message.success('Guardado con éxito');
@@ -88,12 +90,9 @@ class Clientes extends Component{
     };
 
     confirm=(e)=> {
-        let {selectedRowKeys} = this.state;
-        if(selectedRowKeys.length > 0){
-            this.deleteCliente();
-            message.success('Deleted successfully');
-        }
-        message.error('Selecciona uno/s item a eliminar');
+        this.deleteCliente();
+        message.success('Deleted successfully');
+
     };
 
     cancel=(e) =>{
@@ -164,10 +163,12 @@ class Clientes extends Component{
 }
 
 function mapStateToProps(state) {
+
     return{
+        owner:state.user.object,
         clientes: state.clientes.list,
         clientesData:state.clientes.allData,
-        fetched: state.clientes.list !== undefined
+        fetched: state.clientes.list !== undefined && state.user.object !== undefined
     }
 }
 

@@ -21,7 +21,7 @@ const TableGeneric = ({dataSource,
         <Fragment>
 
             <div style={{marginBottom:10, color:'rgba(0, 0, 0, 0.65)',textAlign: 'left' }}>
-                Tienda
+                Punto de venta
                 <Divider type="vertical" />
                 {title}
             </div>

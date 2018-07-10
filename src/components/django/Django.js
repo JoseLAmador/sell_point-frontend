@@ -12,8 +12,8 @@ let profilesUrl = 'http://localhost:8000/api/auth/profiles/';
 //Clientes
 let clientesUrl = 'http://localhost:8000/api/incomes/clientes/';
 
-
-
+//Proveedores
+let proveedoresUrl = 'http://localhost:8000/api/expenses/proveedores/';
 
 
 
@@ -32,7 +32,6 @@ const api = {
 
     /*-----------------user functions-----------------------*/
     logIn:(data)=>{
-        console.log("DD", data)
         return new Promise(function (resolve, reject) {
             const instance = axios.create({
                 baseURL: tokenUrl,
@@ -253,6 +252,84 @@ const api = {
                 }
             });
             instance.delete(clienteId+'/')
+                .then(function (response) {
+                    resolve(response.data);
+                })
+                .catch(function (error) {
+                    console.log('el error: ', error.response);
+                    reject(error);
+                });
+
+
+        });
+    },
+
+
+    /*-----------------proveedores functions-----------------------*/
+
+    getProveedores:(url)=>{
+        let newUrl = proveedoresUrl;
+        if(url)newUrl=url;
+        const userToken = JSON.parse(localStorage.getItem('userToken'));
+        return new Promise(function (resolve, reject) {
+            const instance = axios.create({
+                baseURL: newUrl,
+                // timeout: 2000,
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': 'Token ' + userToken
+                }
+            });
+            instance.get('')
+                .then(function (response) {
+                    resolve(response.data);
+                })
+                .catch(function (error) {
+                    console.log('el error: ', error.response);
+                    reject(error);
+                });
+
+
+        });
+    },
+
+    newProveedor:(proveedor)=>{
+        const userToken = JSON.parse(localStorage.getItem('userToken'));
+        return new Promise(function (resolve, reject) {
+            const instance = axios.create({
+                baseURL: proveedoresUrl,
+                // timeout: 2000,
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': 'Token ' + userToken
+                }
+            });
+            instance.post('', proveedor)
+                .then(function (response) {
+                    resolve(response.data);
+                })
+                .catch(function (error) {
+                    console.log('el error: ', error.response);
+                    reject(error);
+                });
+
+
+        });
+    },
+
+    deleteProveedor:(proveedorId)=>{
+
+        return new Promise(function (resolve, reject) {
+            const userToken = JSON.parse(localStorage.getItem('userToken'));
+            const instance = axios.create({
+                baseURL: proveedoresUrl,
+                // timeout: 2000,
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': 'Token ' + userToken
+                }
+            });
+            instance.delete(proveedorId+'/')
                 .then(function (response) {
                     resolve(response.data);
                 })

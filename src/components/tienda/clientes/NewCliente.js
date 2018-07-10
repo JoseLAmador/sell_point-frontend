@@ -14,7 +14,7 @@ const NewCliente = Form.create()(
                 visible={visible}
                 title={"Nuevo Cliente"}
                 onCancel={onCancel}
-                width={'30%'}
+                width={'45%'}
                 maskClosable={true}
                 footer={[
                     null,

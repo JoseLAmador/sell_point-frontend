@@ -54,10 +54,10 @@ class Admin extends Component{
                 >
                     <div className="logo" >{!this.state.collapsed?
                         <div>
-                        <Icon type="shop" style={{marginRight:10, color:'white', fontSize:20, fontWeight:'bold'}} />
-                        <span style={{color:'white'}}><strong>ARNURSHOP</strong></span>
+                        <Icon type="profile" style={{marginRight:10, color:'white', fontSize:20, fontWeight:'bold'}} />
+                        <span style={{color:'white'}}><strong>Punto de Venta {user.username}</strong></span>
                     </div>:<div>
-                            <Icon type="shop" style={{color:'white', fontSize:20, fontWeight:'bold'}}/>
+                            <Icon type="profile" style={{color:'white', fontSize:20, fontWeight:'bold'}}/>
                         </div>}</div>
                     <LeftSide onOpenChange={this.onOpenChange} openKeys={this.state.openKeys}/>
                 </Sider>
@@ -81,7 +81,7 @@ class Admin extends Component{
 }
 
 function mapStateToProps(state){
-    console.log(state);
+    //console.log(state);
     return{
         user:state.user.object,
         fetched: state.user.object !== undefined
