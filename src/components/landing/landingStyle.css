@@ -1,6 +1,6 @@
 .header {
     height: 85vh;
-    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7)), url(../../imgs/inicio.jpg);
+    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7)), url(../../imgs/business-people-businesswoman-calendar-1187439.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -87,7 +87,7 @@
 
 .section-features {
     padding: 20rem 0;
-    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7)), url(../../imgs/inicio.jpg);
+    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7)), url(../../imgs/afro-analyzing-brainstorming-1124062.jpg);
     background-size: cover;
     margin-top: -2rem;
     transform: skewY(-7deg); }
@@ -200,7 +200,7 @@
 
 .imageCarousel1 {
     height: 300px;
-    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7)), url(../../imgs/apples-bananas-breads-709838.jpg);
+    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7)), url(../../imgs/princ.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -211,7 +211,7 @@
 
 .imageCarousel2 {
     height: 300px;
-    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7)), url(../../imgs/assorted-business-buy-159991.jpg);
+    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7)), url(../../imgs/carousel2.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -222,7 +222,7 @@
 
 .imageCarousel3 {
     height: 300px;
-    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7)), url(../../imgs/business-commerce-daylight-916446.jpg);
+    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7)), url(../../imgs/charts-computer-data-669610.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -268,4 +268,26 @@
 
 .ant-carousel .slick-slide {
     line-height: inherit !important;
+}
+
+/*likeButton*/
+
+.likeButton {
+    background-color: #7CC098;
+    box-shadow: 0 5px 0 #51A372;
+    color: white;
+    padding: .5em 1.5em;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius:5px;
+}
+
+.likeButton:hover {
+    background-color: #51A372;
+}
+
+.likeButton:active {
+    box-shadow: none;
+    top: 5px;
 }

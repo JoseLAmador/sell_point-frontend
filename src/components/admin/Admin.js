@@ -1,8 +1,13 @@
 import React, {Component} from 'react';
-import {Layout, Icon } from 'antd';
+import {Layout, Icon, message } from 'antd';
 import LeftSide from "./LeftSide";
 import Navbar from "./Navbar";
 import Sections from './Sections';
+
+import {connect} from 'react-redux';
+import {bindActionCreators} from 'redux';
+import * as userActions from '../redux/actions/users/userActions';
+
 
 const { Header, Sider, Content } = Layout;
 
@@ -19,6 +24,12 @@ class Admin extends Component{
         });
     };
 
+    logOut = () => {
+        this.props.userActions.logOut();
+        message.info(`Vuelve Pronto ${this.props.user.username}`);
+        this.props.history.push('/');
+    };
+
     onOpenChange = (openKeys) => {
         const latestOpenKey = openKeys.find(key => this.state.openKeys.indexOf(key) === -1);
         if (this.rootSubmenuKeys.indexOf(latestOpenKey) === -1) {
@@ -30,6 +41,7 @@ class Admin extends Component{
         }
     };
     render(){
+        let {user} = this.props;
         return(
 
             <Layout>
@@ -42,18 +54,20 @@ class Admin extends Component{
                 >
                     <div className="logo" >{!this.state.collapsed?
                         <div>
-                        <Icon type="shop" style={{marginRight:10, color:'white', fontSize:20, fontWeight:'bold'}} />
-                        <span style={{color:'white'}}><strong>ARNURSHOP</strong></span>
+                        <Icon type="profile" style={{marginRight:10, color:'white', fontSize:20, fontWeight:'bold'}} />
+                        <span style={{color:'white'}}><strong>Punto de Venta {user.username}</strong></span>
                     </div>:<div>
-                            <Icon type="shop" style={{color:'white', fontSize:20, fontWeight:'bold'}}/>
+                            <Icon type="profile" style={{color:'white', fontSize:20, fontWeight:'bold'}}/>
                         </div>}</div>
                     <LeftSide onOpenChange={this.onOpenChange} openKeys={this.state.openKeys}/>
                 </Sider>
                 <Layout>
                     <Header style={{ background: '#7CC097', padding: 0}} >
                        <Navbar
-                        collapsed={this.state.collapsed}
-                        toggle={this.toggle}
+                           {...user}
+                           logOut={this.logOut}
+                           collapsed={this.state.collapsed}
+                           toggle={this.toggle}
                        />
                     </Header>
                     <Content style={{ margin: '1%', padding: '1%', background: '#f0f2f5', minHeight: '90vh' }}>
@@ -65,5 +79,21 @@ class Admin extends Component{
         );
     }
 }
+
+function mapStateToProps(state){
+    //console.log(state);
+    return{
+        user:state.user.object,
+        fetched: state.user.object !== undefined
+    }
+}
+
+function mapDispatchToProps(dispatch) {
+    return{
+        userActions: bindActionCreators(userActions, dispatch)
+    }
+}
+
+Admin = connect(mapStateToProps, mapDispatchToProps)(Admin);
 
 export default Admin;
